@@ -1,4 +1,4 @@
-# Titlefy
+# Titlegen
 
 A simple gem to generate a random title. 
 
@@ -7,7 +7,7 @@ A simple gem to generate a random title.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'titlefy'
+gem 'titlegen'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install titlefy
+    $ gem install titlegen
 
 ## Usage
 
@@ -30,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/titlefy/fork )
+1. Fork it ( https://github.com/[my-github-username]/titlegen/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

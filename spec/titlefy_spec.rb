@@ -1,13 +1,13 @@
 require 'spec_helper'
 require 'pry'
 
-describe Titlefy do
+describe Titlegen do
   it 'has a version number' do
-    expect(Titlefy::VERSION).not_to be nil
+    expect(Titlegen::VERSION).not_to be nil
   end
 
   it 'generates a random title' do
-    title = Titlefy.generate_title
+    title = Titlegen.generate_title
     title_array = title.split
 
     expect(title_array.length).to eq 3

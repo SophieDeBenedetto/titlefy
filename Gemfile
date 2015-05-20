@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in titlefy.gemspec
+# Specify your gem's dependencies in titlegen.gemspec
 gemspec
 gem 'rspec'
 gem 'activesupport-inflector', '~> 0.1.0'

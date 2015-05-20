@@ -1,17 +1,17 @@
-# coding: utf-8
+titlegen: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'titlefy/version'
+require 'titlegen/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "titlefy"
-  spec.version       = Titlefy::VERSION
+  spec.name          = "titlegen"
+  spec.version       = Titlegen::VERSION
   spec.authors       = ["SophieDeBenedetto"]
   spec.email         = ["sophie.debenedetto@gmail.com"]
 
   spec.summary       = %q{generate a random movie or book title}
   spec.description   = %q{generate a random movie or book title.}
-  spec.homepage      = "https://github.com/SophieDeBenedetto/titlefy"
+  spec.homepage      = "https://github.com/SophieDeBenedetto/titlegen"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or

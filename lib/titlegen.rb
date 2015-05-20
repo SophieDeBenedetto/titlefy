@@ -1,8 +1,8 @@
-require "titlefy/version"
-require "titlefy/dictionary"
+require "titlegen/version"
+require "titlegen/dictionary"
 require 'active_support/inflector'
 
-class Titlefy
+class Titlegen
   
 
   include Dictionary
