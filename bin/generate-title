@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require_relative '../lib/titlegen.rb'
+
+if ARGV[0] == "LOUD"
+  puts Titlegen.generate_title.upcase
+elsif ARGV[0] && ARGV[0] != "LOUD"
+  puts "please use generate-title or generate-title LOUD to generate a title."
+else
+  puts Titlegen.generate_title
+end

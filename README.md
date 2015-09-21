@@ -20,7 +20,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Generate a random title inside your Ruby project:
+
+```ruby
+Titlegen.generate_title
+  => "Those Spacey Days"
+```
+
+Or, use from the command line with:
+
+`generate-title` 
+
+or 
+
+`generate-title LOUD` 
+
+to get a title in all caps. 
 
 ## Development
 

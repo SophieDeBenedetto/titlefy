@@ -1,5 +1,5 @@
-require "titlegen/version"
-require "titlegen/dictionary"
+require_relative "./titlegen/version"
+require_relative "./titlegen/dictionary"
 require 'active_support/inflector'
 
 class Titlegen
