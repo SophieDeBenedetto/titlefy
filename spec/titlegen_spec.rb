@@ -10,7 +10,7 @@ describe Titlegen do
     title = Titlegen.generate_title
     title_array = title.split
 
-    expect(title_array.length).to eq 3
+    expect(title_array.length).to be >= 3  # Will allow titles like: "A Few Red Ants"
   end
 end
 
