@@ -12,6 +12,12 @@ describe Titlegen do
 
     expect(title_array.length).to be >= 3  # Will allow titles like: "A Few Red Ants"
   end
+
+  it 'corrects voweled pronouns' do
+    allow(Dictionary).to receive(:pronoun).and_return('A')
+    pronoun = Titlegen.correctly_voweled_pronoun(adjective = 'unsightly')
+    expect(pronoun).to eq 'An'
+  end
 end
 
 
