@@ -18,9 +18,7 @@ class Titlegen
 
     def self.correctly_voweled_pronoun(adjective)
       pronoun = Dictionary.pronoun
-      if vowel?(adjective) && vowel?(pronoun)
-        pronoun = "An"
-      end
+      return 'An' if vowel?(adjective) && pronoun == 'A'
       pronoun
     end
 
