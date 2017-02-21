@@ -18,9 +18,7 @@ class Titlegen
 
     def self.correctly_voweled_pronoun(adjective)
       pronoun = Dictionary.pronoun
-      if vowel?(adjective) && vowel?(pronoun)
-        pronoun = "An"
-      end
+      return 'An' if vowel?(adjective) && pronoun == 'A'
       pronoun
     end
 
@@ -29,11 +27,9 @@ class Titlegen
     end
 
     def self.correctly_pluralized_noun(pronoun)
-      if pronoun = "Some" || "A Few" || "No"
-        Dictionary.noun.pluralize
-      else
-        Dictionary.noun.singularize
-      end
+      noun = Dictionary.noun
+      return noun.pluralize if ['Some','A Few','No'].include? pronoun
+      noun.singularize
     end
 
     def self.make_title(pronoun, adjective, noun)
